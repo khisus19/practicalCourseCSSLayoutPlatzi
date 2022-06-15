@@ -5,7 +5,7 @@
 }
 html {
     font-size: 62.5%;
-    font-family: "Flaticon", sans-serif;
+    font-family: "Roboto mono", monospace;
 }
 a {
     text-decoration: none;
@@ -14,7 +14,7 @@ a {
 :root {
     --green: #47cfac
 }
-
+/* Nav sect */
 .top-bar {
     width: 100%;
     padding: 10px 30px;
@@ -33,7 +33,7 @@ a {
     width: 50px;
     height: 50%;
     margin: 10px 15px;
-    color: #ffffff;
+    color: #fff;
 }
 nav {
     width: 100%;
@@ -51,9 +51,11 @@ nav {
     width: 100%;
 }
 .about-sect a{
-    width: 40%;
     font-size: 1.8rem;
     border-bottom: 1px solid #000;
+}
+.about-sect a:visited {
+    text-decoration: none;
 }
 /* Hero section */
 .hero {
@@ -73,12 +75,15 @@ h1 {
     margin: 20px;
     font-size: 3.5rem;
     text-align: center;
-    
+    font-weight: 700;
 }
-button {
-    padding: 8px;
-    height: 35px;
+.hero-btn {
+    padding: 10px;
     border-radius: 5px;
     background-color: var(--green);
+    font-size: 1.2rem;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
