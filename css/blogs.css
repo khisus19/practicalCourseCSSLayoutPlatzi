@@ -13,9 +13,10 @@ a {
 }
 :root {
     --green: #47cfac;
-    --color-light-green: #88d6c3;
-    --color-white: whitesmoke;
-    --color-grey: rgb(223, 221, 221);
+    --light-green: #88d6c3;
+    --white: rgb(245,245,245);
+    --grey: rgb(223, 221, 221);
+    --light-black: #22272c;
 }
 /* Nav sect */
 .top-bar {
@@ -36,7 +37,7 @@ a {
     width: 50px;
     height: 50%;
     margin: 10px 15px;
-    color: var(--color-white);
+    color: var(--white);
 }
 nav {
     width: 100%;
@@ -55,7 +56,7 @@ nav {
 }
 .about-sect a{
     font-size: 1.8rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--light-black);
 }
 .about-sect a:visited {
     text-decoration: none;
@@ -64,7 +65,7 @@ nav {
 .news-section {
     width: 100%;
     padding: 20px 80px 40px;
-    background-color: var(--color-grey);
+    background-color: var(--grey);
 }
 h3 {
     font-size: 2rem;
@@ -109,9 +110,9 @@ h2 {
 }
 .secondary-btn:hover{
     cursor: pointer;
-    border: 1px solid var(--color-white);
+    border: 1px solid var(--white);
     background-color: var(--green);
-    color: var(--color-white);
+    color: var(--white);
 
 }
 /* Blogs section */
@@ -130,7 +131,7 @@ h2 {
     padding: 20px;
     text-align: center;
     font-weight: bold;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--light-black);
 }
 .blogs-container article {
     display: flex;
@@ -151,4 +152,15 @@ h2 {
 .blogs-container .secondary-btn {
     width: 100px;
     padding: 10px;
+}
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--light-black);
+    color: var(--white);
+    border-top: 35px solid var(--green);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
 }
