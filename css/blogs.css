@@ -60,7 +60,7 @@ nav {
 /* News Container */
 .news-container {
     padding: 20px 80px 40px;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(219, 219, 219);
     display: grid;
     grid-template: "top top"
                     "img title";
@@ -99,7 +99,7 @@ h2 {
 .news-title p {
     font-size: 1.8rem;
 }
-.news-title a {
+.secondary-btn {
     margin: 20px 0;
     width: 120px;
     padding: 15px 10px;
@@ -107,4 +107,44 @@ h2 {
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
+}
+/* Blogs section */
+.blogs-sect {
+    width: 100%;
+    padding: 0 60px;
+    display: grid;
+    grid-template: "top top top"
+                    "left-col center-col right-col"
+                    "bottom-lf bottom-center bottom-right";
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.blogs-sect h3 {
+    padding: 20px;
+    grid-area: "top";
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+.blogs-sect article {
+    width: 100%;
+    grid-area: "left-col";
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.blogs-sect img {
+    width: 95%;
+}
+.blogs-sect h5 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.blogs-sect p {
+    font-size: 1.6rem;
+}
+.blogs-sect .secondary-btn {
+    width: 100px;
+    padding: 10px;
 }
