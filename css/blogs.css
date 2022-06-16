@@ -12,7 +12,10 @@ a {
     display: inline;
 }
 :root {
-    --green: #47cfac
+    --green: #47cfac;
+    --color-light-green: #88d6c3;
+    --color-white: whitesmoke;
+    --color-grey: rgb(223, 221, 221);
 }
 /* Nav sect */
 .top-bar {
@@ -33,7 +36,7 @@ a {
     width: 50px;
     height: 50%;
     margin: 10px 15px;
-    color: #fff;
+    color: var(--color-white);
 }
 nav {
     width: 100%;
@@ -60,11 +63,11 @@ nav {
 /* News Container */
 .news-container {
     padding: 20px 80px 40px;
-    background-color: rgb(219, 219, 219);
+    background-color: var(--color-grey);
     display: grid;
     grid-template: "top top"
                     "img title";
-    grid-template-columns: [left]1fr [right]1fr;
+    grid-template-columns: [left]2fr [right]1fr;
     grid-template-rows: [top]1fr [down]9fr;
     gap: 10px 70px;
 }
@@ -108,43 +111,48 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
+.secondary-btn:hover{
+    cursor: pointer;
+    border: 1px solid var(--color-white);
+    background-color: var(--green);
+    color: var(--color-white);
+
+}
 /* Blogs section */
 .blogs-sect {
     width: 100%;
-    padding: 0 60px;
+    padding: 0 50px;
+}
+.blogs-container {
+    margin: 20px auto;
+    width: 96%;
     display: grid;
-    grid-template: "top top top"
-                    "left-col center-col right-col"
-                    "bottom-lf bottom-center bottom-right";
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 .blogs-sect h3 {
     padding: 20px;
-    grid-area: "top";
     text-align: center;
     font-weight: bold;
     border-bottom: 1px solid #000;
 }
-.blogs-sect article {
-    width: 100%;
-    grid-area: "left-col";
+.blogs-container article {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.blogs-sect img {
+.blogs-container img {
+    margin: 0 auto;
     width: 95%;
 }
-.blogs-sect h5 {
-    text-align: center;
+.blogs-container h5 {
     font-size: 1.8rem;
     font-weight: 300;
 }
-.blogs-sect p {
+.blogs-container p {
     font-size: 1.6rem;
 }
-.blogs-sect .secondary-btn {
+.blogs-container .secondary-btn {
     width: 100px;
     padding: 10px;
 }
