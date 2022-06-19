@@ -86,7 +86,6 @@ h3 {
 }
 .news-title {
     width: 95%;
-    padding: 20px;
     display: flex;
     flex-direction: column;
 }
