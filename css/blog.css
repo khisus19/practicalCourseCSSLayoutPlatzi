@@ -28,15 +28,13 @@ a {
     align-items: center;
 }
 .icons-container {
+    width: 350px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .icons-container a {
-    display: inline-block;
     width: 50px;
-    height: 50%;
-    margin: 10px 15px;
     color: var(--white);
 }
 nav {
