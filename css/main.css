@@ -12,7 +12,11 @@ a {
     display: inline;
 }
 :root {
-    --green: #47cfac
+    --green: #47cfac;
+    --light-green: #88d6c3;
+    --white: rgb(245,245,245);
+    --grey: rgb(223, 221, 221);
+    --light-black: #22272c;
 }
 /* Nav sect */
 .top-bar {
