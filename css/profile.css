@@ -135,6 +135,38 @@ nav {
     color: var(--white);
 
 }
+/* CONTACT SECTION */
+.contact-sect {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: var(--grey);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(98%, 280px), 1fr));
+    gap: 10px;
+}
+.contact-sect-article {
+    width: 98%;
+    padding: 20px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-sect-article figure {
+    width: 100%;
+}
+.contact-sect-article img {
+    width: 80px;
+}
+.contact-sect-article a {
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--light-black);
+}
+.contact-sect-article p {
+    margin: 10px 0;
+}
+
 /* FOOTER */
 footer {
     width: 100%;
