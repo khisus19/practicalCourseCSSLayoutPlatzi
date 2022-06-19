@@ -70,7 +70,7 @@ nav {
     min-height: 500px;
     padding: 30px;
     color: #ffffff;
-    background: url(../assets/img/tablet/Cover_tab.webp) center no-repeat;
+    background: url(../assets/img/small/Cover_mobile.webp) center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,13 @@ h1 {
 }
 @media screen and (min-width: 768px) {
     .hero {
-        background: url(../assets/img/desktop/Cover.webp) center no-repeat;
+        background: url(../assets/img/medium/Cover_tab.webp) center no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background: url(../assets/img/large/Cover.webp) center no-repeat;
         background-size: cover;
     }
 }
