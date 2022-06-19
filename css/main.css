@@ -14,8 +14,8 @@ a {
 :root {
     --green: #47cfac;
     --light-green: #88d6c3;
-    --white: rgb(245,245,245);
-    --grey: rgb(223, 221, 221);
+    --white: #f5f5f5;
+    --grey: #dfdddd;
     --light-black: #22272c;
 }
 /* Nav sect */
@@ -34,8 +34,13 @@ a {
     flex-wrap: wrap;
 }
 .icons-container a {
-    width: 50px;
+    width: 30px;
     color: var(--white);
+}
+.icons-container .icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--white);
 }
 nav {
     width: 100%;
@@ -63,10 +68,9 @@ nav {
 .hero {
     width: 100%;
     min-height: 500px;
-    max-height: 600px;
     padding: 30px;
     color: #ffffff;
-    background: url(../assets/img/mobile/Cover_mobile.webp) center no-repeat;
+    background: url(../assets/img/tablet/Cover_tab.webp) center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -88,4 +92,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background: url(../assets/img/desktop/Cover.webp) center no-repeat;
+        background-size: cover;
+    }
 }
