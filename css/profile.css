@@ -94,6 +94,7 @@ nav {
 .projects-sect h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--light-black);
 }
 .projects-container {
     width: 100%;

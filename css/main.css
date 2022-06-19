@@ -66,7 +66,7 @@ nav {
     max-height: 600px;
     padding: 30px;
     color: #ffffff;
-    background: url(../assets/img/Cover.png) center no-repeat;
+    background: url(../assets/img/mobile/Cover_mobile.webp) center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
